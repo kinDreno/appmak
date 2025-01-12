@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "OE/+/Lw/U281e5Ey1bPnUJmmrqMAwDOnQiniVrje4Wg=",
+  "Source": "netapi",
+  "BasePath": "_content/netapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

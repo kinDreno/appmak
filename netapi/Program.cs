@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowNextjsApp", policy =>
+    options.AddPolicy("AllowAllOrigins", policy =>
     {
         policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
     });
@@ -15,7 +15,7 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 
 //apply CORS policy
-app.UseCors();
+app.UseCors("AllowAllOrigins");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
